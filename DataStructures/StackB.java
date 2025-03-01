@@ -24,6 +24,7 @@ public class StackB {
             return list.get(list.size()-1);
         }
     }
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         Stack s=new Stack();
         s.push(1);
