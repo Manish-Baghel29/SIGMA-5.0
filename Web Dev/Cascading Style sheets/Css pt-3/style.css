@@ -1,0 +1,11 @@
+div{
+    height: 100px;
+    width : 600px;
+    background-color: pink;
+    border : 5px solid black;
+    border-top: 5px dotted yellowgreen;
+}
+
+h1{
+    border : 2px dashed orangered;
+}

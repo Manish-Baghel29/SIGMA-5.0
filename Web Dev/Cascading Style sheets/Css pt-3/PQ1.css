@@ -1,0 +1,33 @@
+#outer{
+    border: 2px solid black;
+    height: 190px;
+    width:70px;
+    margin-left: 100px;
+}
+
+#red{
+    border: 2px solid black;
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#yellow{
+    border: 2px solid black;
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+#green{
+    border: 2px solid black;
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
