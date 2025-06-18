@@ -11,9 +11,13 @@ h3.style.color = "blue";
 let div=document.createElement("div");
 document.querySelector('body').appendChild(div);
 div.style.backgroundColor = 'pink';
+div.style.border = "solid black 2px"
+
 let h1 = document.createElement('h1');
 h1.innerText = "I'm in a div";
+
 let para2 = document.createElement('p');
 para2.innerText="Me too"
+
 div.append(h1);
 div.append(para2);
