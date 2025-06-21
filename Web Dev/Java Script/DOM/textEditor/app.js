@@ -1,5 +1,12 @@
 let inp=document.querySelector('input');
-let para=document.querySelector('p');
+let div=document.querySelector('div');
+let btn=document.querySelector("button");
 inp.addEventListener('input' , function(){
-    para.innerText = this.value; //inp.value
+
+    btn.addEventListener("click",function(){
+        let para=document.createElement("p");
+        para.innerText = inp.value;
+        inp.value="";
+        div.appendChild(para);
+    });
 });
