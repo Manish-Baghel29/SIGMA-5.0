@@ -1,0 +1,14 @@
+h1{
+    color: maroon;
+}
+
+div{
+    background-color: lightpink;
+}
+.user{
+    font-style: italic;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
