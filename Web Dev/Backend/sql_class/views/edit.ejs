@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit page</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h3>You are about to edit username of <%=user.email %> </h3>
+    <form method="post" action="/users/<%=user.id%>?_method=PATCH">
+        <label for="username">New Username:</label>
+        <input type="text" name="username" id="username" value="<%=user.username%>" required><br><br>
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" required><br><br>
+        <button type="submit">Update Username</button>
+    </form><br><br>
+    <button><a href="/">Home Page!</a></button>
+    <button><a href="/users">See Users!</a></button>
+</body>
+</html>

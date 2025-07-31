@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <style>
+        table , th , tr , td{
+            border: 1px solid black;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+        }
+        .home {
+            font-size: larger;
+            border-radius: 10%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Users information is given in following TABLE :) &nbsp;&nbsp;<button class="home"><a href="/">Home</a></button></h1>
+    <table>
+        <tr>
+            <th><b>id</b></th>
+            <th><b>username</b></th>
+            <th><b>email</b></th>
+        </tr>
+        <% for(let user of users){ %>
+        <tr>
+            <td><%= user.id %></td>
+            <td><%= user.username %></td>
+            <td><%= user.email %></td>
+            <td>
+                <button><a href="/users/<%= user.id %>/edit">edit username</a></button>
+            </td>
+            <td>
+                <button><a href="/users/<%= user.id %>/delete">delete account</a></button>
+            </td>
+        </tr>
+        <% } %>
+    </table><br><br>
+</body>
+</html>
+
