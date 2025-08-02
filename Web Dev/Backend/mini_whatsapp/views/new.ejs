@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New chat</title>
+    <style>
+        button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Chat Now!</h3>
+    <form method="post" action="/chats">
+        <label for="sender">From:</label>
+        <input type="text" id="sender" name="sender" required><br><br>
+        <label for="receiver">To:</label>
+        <input type="text" id="receiver" name="receiver" required><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" ></textarea><br><br>
+        <button type="submit">Send</button>
+        <button type="reset">Reset!</button>
+    </form>
+</body>
+</html>
