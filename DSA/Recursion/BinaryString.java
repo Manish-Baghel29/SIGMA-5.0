@@ -11,6 +11,6 @@ public class BinaryString {
         }
     }
     public static void main(String[] args) {
-        printBiString(5, 0, "");
+        printBiString(3, 0, "");
     }
 }
